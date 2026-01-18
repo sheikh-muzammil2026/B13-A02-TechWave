@@ -1,0 +1,42 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/* shared styel  */
+
+.display-flex{
+    display: flex;
+}
+
+.navbar{
+    max-width: 1200px;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px auto;
+    background-color: #412567;
+    padding: 24px;
+   
+}
+
+.Wave-color{
+    color: #000000;
+}
+.white-colo{
+ color: #FFFFFF;
+}
+.menu{
+gap: 32px;
+}
+
+.menu li{
+    list-style: none;
+}
+.menu li a{
+    text-decoration: none;
+}
+
+.hero-image{
+    max-height: 760px;
+}
