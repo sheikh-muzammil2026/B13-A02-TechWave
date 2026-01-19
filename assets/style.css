@@ -40,11 +40,14 @@
      background-color: #412567;
     
 }
+
 .navbar-content{
     max-width: 1200px;
     justify-content: space-between;
     align-items: center;
     margin: 0px auto;
+
+    background-color: #412567;
     padding: 24px;
    
 }
