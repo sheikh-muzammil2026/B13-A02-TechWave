@@ -83,17 +83,20 @@ gap: 32px;
 .btn i {
     margin-left: 4px;
 }
-/* 
+
 .btn:hover{
-    color: white;
-    background-color: red;
-} */
+    color: black;
+    background: yellow;
+}
 
 /*================================= hero section styles ============================*/
 
 
 .hero{
-   background-image: url(./hero-bg.png);
+   background-image: url(./hero-bg.png), url(./hero-circle.png);
+   background-repeat: no-repeat;
+   /* background-size: cover; */
+   background-position: unset, center;
 }
 
 /* ============= about section ============== */
@@ -204,7 +207,7 @@ gap: 32px;
 
   }
 
-  .card-image{
+  .choose-card-image{
     width: 60px;
     height: 60px;
      margin-bottom: 16px;
@@ -215,25 +218,41 @@ gap: 32px;
   /* ============================== Featured-Episodes section ========================== */
 
   .Featured-Episodes{
-    max-width: 1600px;
+    /* max-width: 1600px; */
     padding: 120px 200px;
     background-color: #1A0B2E;
   }
 
-/* .Featured-cards-container{
-    
-} */
+.Featured-cards-container{
+    /* max-width: 1200px; */
+    gap: 30px;
+    margin: 0 auto;
+}
+
+.Featured-card-content{
+    padding: 24px;
+}
 .Featured-card{
     background-color: #250D44;
     border-radius: 24px ;
 }
 
-.card-image{
+.Featured-card-image{
     width: 100%;
 }
 
+.doration{
+    margin-top: 12px;
+    gap: 8px;
+    color:#00FF88;
+    
+}
+
+
 .host-meet{
+     /* max-width: 1200px; */
     margin-top: 120px;
+    color:#00FF88;
    
 }
 .host-details{
@@ -262,28 +281,44 @@ gap: 32px;
    
 }
 
-
+.host-experience{
+    margin-bottom: 16px;
+}
 
   /* ============================== footer section ========================== */
 
   footer{
     background-image: url(./footer-bg.png);
+     background-size: cover;
+     background-repeat: no-repeat;
   }
 
   .footer-content{
+    max-width: 1360px;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    gap: 32px;
-    padding: 80px 80px;
+    gap: 38px;
+    padding: 120px 80px;
     margin: 0 auto;
   }
 
   .footer-icons{
     justify-content: space-between;
     gap: 24px;
+   
   }
+
+.footer-icons p{
+    color:#FFFFFF;
+    opacity: 60%;
+}
 
   .icon-4{
     gap: 8px;
+  }
+
+  .copyright{
+    color:#FFFFFF;
+    opacity: 60%;
   }
