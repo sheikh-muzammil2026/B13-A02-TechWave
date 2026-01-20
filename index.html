@@ -10,7 +10,7 @@
     <!-- icon awesome link -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
 </head>
-<body>
+<body class="font-inter">
 
     <!-- navbar -->
     <header>
@@ -22,10 +22,11 @@
                 <li><a href="#">Episodes</a></li>
                 <li><a href="#">Host</a></li>
             </ul>
-            <button class="btn text-color-white">Subscribe<i class="fa-solid fa-arrow-right"></i></button>
+            <button class="menu-btn text-color-white">Subscribe<i class="fa-solid fa-arrow-right"></i></button>
+            <img src="./assets/hamburger-menu.png" alt="" class="hamburger-menu">
             </div>
         </nav>
-
+        <!-- <hr class="horizontal"> -->
         <!-- hero / banner -->
 
         <div class="hero">
@@ -40,14 +41,9 @@
                     <h2>TechWave</h2>
                     <p>Your daily dose of tech insights, productivity hacks, and personal growth</p>
                     <div class="btn-container display-flex">
-                        <div class="spotify-btn ">
-                        <img src="./assets/spotify.png" alt="">
-                        <button >Listen on Spotify</button>
-                        </div>
-                        <div class="subscribe-btn ">
-                            <img src="./assets/message.png" alt="">
-                            <button>Subscribe</button>
-                        </div>
+                        <button class="spotify-btn display-flex"><img src="./assets/spotify.png" alt="" ><span>Listen on Spotify</span></button>
+                        <button class="subscribe-btn display-flex"><img src="./assets/message.png" alt="" ><span>Subscribe</span></button>
+                   
                     </div>
                 </div>
             </div>
@@ -58,7 +54,7 @@
 
  <!-- =======================about section =========================== -->
 
-        <section class="about">
+        <section class="about" >
            <div class="about-content display-flex">
             
              <h2 class="about-title">About the Podcast</h2>
@@ -69,8 +65,8 @@
             <p class="bottom-description">Join thousands of young professionals and tech enthusiasts who start their day with TechWave.</p>
 
              <hr class="horizontal">
-
-           <div class="about-cards display-flex">
+        </div>
+         <div class="about-cards">
             <div class="card">
                 <p class="card-number">150K +</p>
                 <p class="stat-label">Monthly Listeners</p>
@@ -88,8 +84,6 @@
                <p class="stat-label">Industry Experts</p>
             </div>
            </div>
-
-        </div>
 
           
         </section>
@@ -205,7 +199,7 @@
 
      <!-- =======================  footer =========================== -->
     <footer>
-        <div class="footer-content display-flex">
+        <div class="footer-content display-flex display-hiden">
             <img src="./assets/TechWave-footer.png" alt="" class="footer-logo">
 
             <div class="footer-icons display-flex ">
