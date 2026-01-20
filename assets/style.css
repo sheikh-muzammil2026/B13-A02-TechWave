@@ -93,10 +93,20 @@ gap: 32px;
 
 
 .hero{
+   position: relative;
    background-image: url(./hero-bg.png);
    background-repeat: no-repeat;
-   /* background-size: cover; */
-   background-position: unset, center;
+   background-size: cover;
+   background-position: center;
+   min-height: 100vh;
+  
+}
+
+.hero-content{
+    position: absolute;
+    top: 50%;
+    /* right: -120px; */
+    transform: translateY(-50%);
 }
 
 /* ============= about section ============== */
