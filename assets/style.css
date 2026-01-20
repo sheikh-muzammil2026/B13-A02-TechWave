@@ -77,12 +77,17 @@ gap: 32px;
      #F107A3,
      #7B2FF7
   );
+     cursor: pointer;
 }
 
 .btn i {
     margin-left: 4px;
 }
-
+/* 
+.btn:hover{
+    color: white;
+    background-color: red;
+} */
 
 /*================================= hero section styles ============================*/
 
@@ -159,7 +164,7 @@ gap: 32px;
     display: grid;
     gap: 40px;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 225px);
+    grid-template-rows: repeat(3, 1fr);
 
  }
 
@@ -210,7 +215,75 @@ gap: 32px;
   /* ============================== Featured-Episodes section ========================== */
 
   .Featured-Episodes{
+    max-width: 1600px;
     padding: 120px 200px;
     background-color: #1A0B2E;
   }
-  
+
+/* .Featured-cards-container{
+    
+} */
+.Featured-card{
+    background-color: #250D44;
+    border-radius: 24px ;
+}
+
+.card-image{
+    width: 100%;
+}
+
+.host-meet{
+    margin-top: 120px;
+   
+}
+.host-details{
+    gap: 24px;
+     padding: 40px;
+    border-radius: 24px;
+    background-color: #3511654f;
+}
+
+.host-name{
+    font-size: 32px;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 16px;
+}
+
+.social-icons{
+    gap: 8px;
+    align-items: center;
+}
+
+.icon{
+    border: 1px solid rgba(255, 255, 255, 0.096) ;
+    border-radius: 50%;
+    padding: 20px;
+   
+}
+
+
+
+  /* ============================== footer section ========================== */
+
+  footer{
+    background-image: url(./footer-bg.png);
+  }
+
+  .footer-content{
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 32px;
+    padding: 80px 80px;
+    margin: 0 auto;
+  }
+
+  .footer-icons{
+    justify-content: space-between;
+    gap: 24px;
+  }
+
+  .icon-4{
+    gap: 8px;
+  }
