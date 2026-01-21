@@ -49,9 +49,7 @@
 }
 
 /* ======================= main style ===================================*/
-header{
-     /* max-width: 1600px; */
-}
+
 .navbar{
    
      background-color: #120b2e;
@@ -157,8 +155,8 @@ gap: 32px;
    background-repeat: no-repeat;
    background-size: cover;
    background-position: center;
-   /* min-height: 100vh; */
-    /* overflow: hidden; */
+   min-height: 100vh;
+    overflow: hidden;
   
 }
 
@@ -383,7 +381,8 @@ gap: 32px;
 
 .about{
    background-color: #1A0B2E;
-   padding: 50px 200px 120px;
+   /* padding: 50px 200px 120px; */
+    padding: 120px 20px;
    text-align: center;
    /* display: none; */
 }
@@ -512,11 +511,12 @@ gap: 32px;
 
 
  .choose-cards-container{
-      /* max-width: 1200px; */
+      max-width: 1200px;
     display: grid;
     gap: 40px;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
+     margin: 0 auto;
 
  }
 
@@ -716,9 +716,9 @@ gap: 32px;
   }
 
 .Featured-cards-container{
-    /* max-width: 1200px; */
+    max-width: 1200px;
     gap: 16px;
-    /* margin: 0 auto; */
+    margin: 0 auto;
     flex-direction: column;
 }
 
