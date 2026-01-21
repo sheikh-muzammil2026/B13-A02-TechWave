@@ -299,7 +299,7 @@ gap: 32px;
     width: 100%;
     max-width: 100%;
    position: relative;
-   background-image: url(./Image.png);
+   background-image: url(./hero-bg-mobile.png);
    background-repeat: no-repeat;
    background-size: cover;
     background-position: 50% 20%;
@@ -583,7 +583,10 @@ gap: 32px;
  }
 
 
+.section-title{
+    font-size: 32px;
 
+}
  .choose-cards-container .card-1{
     grid-row: span 1;
     gap: 16px;
@@ -738,6 +741,11 @@ gap: 32px;
     color:#00FF88;
    
 }
+
+.section-title{
+    font-size: 32px;
+
+}
 .host-details{
     gap: 24px;
      padding: 40px;
@@ -748,7 +756,7 @@ gap: 32px;
 }
 
 .host-name{
-    font-size: 32px;
+    font-size: 24px;
     font-weight: bold;
     color: white;
     margin-bottom: 16px;
@@ -798,6 +806,14 @@ gap: 32px;
    
   }
 
+   /* .footer-logo{
+    width: 100%;
+  } */
+
+.footer-logo-mobile{
+    display: none;
+}
+
 .footer-icons p{
     color:#FFFFFF;
     opacity: 60%;
@@ -815,33 +831,75 @@ gap: 32px;
 
   @media screen and (max-width: 576px) {
      footer{
-    background-image: url(./Footer.png);
+    background-image: url(./footer-bg-mobile.png);
      background-size: cover;
      background-repeat: no-repeat;
-     width: 100%;
-     max-width: 100%;
+     /* width: 100%;
+     max-width: 100%; */
+      padding: 40px 20px;
   }
 
   
   .footer-content{
-    width: 100%;
+    /* width: 100%;
     max-width: 100%;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     gap: 16px;
     padding: 16px;
-    margin: 0 auto;
+    */
+     justify-content: center;
+    align-items: center;
+    
+     padding: 16px;
+    gap: 24px;
+     margin: 0 auto;
   }
 
 
   .footer-icons{
-    flex-wrap: wrap;
-    gap: 16px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+     /* justify-content: center;
+     align-items: center; */
+    /* flex-wrap: wrap;
+    gap: 12px;
+     justify-content: center;
+     flex-direction: column;
+    */
+  }
+ 
+
+  .footer-logo-mobile{
+    display: flex;
+    width: 210px;
+}
+
+.footer-logo{
+    display: none;
+}
+
+.footer-icons p{
+    color:#FFFFFF;
+    opacity: 60%;
+      font-size: 14px;
+    /* line-height: 22px; */
+    text-align: center;
    
+}
+
+  .icon-4{
+    gap: 8px;
   }
-  .footer-logo{
-    width: 100%;
+
+  .copyright{
+    color:#FFFFFF;
+    opacity: 60%;
+     font-size: 14px;
+    line-height: 22px;
+    text-align: center;
   }
+
 
   }
