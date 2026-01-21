@@ -50,7 +50,7 @@
 
 /* ======================= main style ===================================*/
 header{
-     max-width: 1600px;
+     /* max-width: 1600px; */
 }
 .navbar{
    
@@ -512,7 +512,7 @@ gap: 32px;
 
 
  .choose-cards-container{
-      max-width: 1200px;
+      /* max-width: 1200px; */
     display: grid;
     gap: 40px;
     grid-template-columns: repeat(3, 1fr);
@@ -687,12 +687,20 @@ gap: 32px;
     align-items: center;
 }
 
-.icon{
-    max-width: 60px;
+.icon-box{
+    width: 48px;
+    height: 48px;
     border: 1px solid rgba(255, 255, 255, 0.096) ;
     border-radius: 50%;
-    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
    
+}
+
+.icon-box img{
+    width: 22px;
+    height: 22px;
 }
 
 .host-experience{
@@ -768,14 +776,19 @@ gap: 32px;
     justify-content: center;
 }
 
-.icon{
-    width: 20px;
+.icon-box{
+    width: 44px;
+    height: 44px;
     border: 1px solid rgba(255, 255, 255, 0.096) ;
     border-radius: 50%;
-    padding: 20px;
+    /* padding: 20px; */
    
 }
 
+.icon-box img{
+     width: 20px;
+    height: 20px;
+}
 .host-experience{
     margin-bottom: 16px;
 }
@@ -806,10 +819,7 @@ gap: 32px;
    
   }
 
-   /* .footer-logo{
-    width: 100%;
-  } */
-
+  
 .footer-logo-mobile{
     display: none;
 }
@@ -861,13 +871,10 @@ gap: 32px;
   .footer-icons{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-     /* justify-content: center;
-     align-items: center; */
-    /* flex-wrap: wrap;
-    gap: 12px;
-     justify-content: center;
-     flex-direction: column;
-    */
+     justify-items: center;
+     align-items: center;
+     gap: 12px;
+    
   }
  
 
