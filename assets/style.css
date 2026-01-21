@@ -53,13 +53,13 @@ header{
      max-width: 1600px;
 }
 .navbar{
-    max-width: 1200px;
+   
      background-color: #120b2e;
     
 }
 
 .navbar-content{
-   
+    max-width: 1140px;
     justify-content: space-between;
     align-items: center;
     margin: 0px auto;
@@ -192,6 +192,19 @@ gap: 32px;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  animation: micBlink 1s infinite alternate;
+
+}
+
+
+@keyframes micBlink {
+  0% {
+    filter: brightness(0) saturate(100%);
+  }
+  100% {
+    filter: brightness(1) saturate(100%) hue-rotate(0deg);
+    filter: drop-shadow(0 0 8px red);
+  }
 }
 
 .badge {
@@ -330,7 +343,7 @@ gap: 32px;
 
 .badge {
   position: absolute;
-  width: 70px;
+  width: 80px;
 
   top: -15px;
   right: 10px;
